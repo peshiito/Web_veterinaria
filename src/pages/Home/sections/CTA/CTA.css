@@ -1,0 +1,38 @@
+.cta {
+  background: var(--primary-dark);
+  padding: 80px 0;
+}
+
+.dark .cta {
+  background: var(--primary);
+}
+
+.cta__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta__title {
+  color: #ffffff;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.cta__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta__btn {
+  background: #ffffff !important;
+  color: var(--primary-dark) !important;
+  font-weight: 600;
+}
+
+.cta__btn:hover {
+  background: var(--primary-subtle) !important;
+  transform: translateY(-2px);
+}

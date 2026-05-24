@@ -1,0 +1,152 @@
+/* ============================================
+   TOKENS GLOBALES
+   ============================================ */
+
+:root {
+  --bg-primary: #f5f8f5;
+  --bg-secondary: #ebf0eb;
+  --card-bg: #ffffff;
+
+  --primary: #2e7d32;
+  --primary-dark: #1b5e20;
+  --primary-light: #4caf50;
+  --primary-subtle: #e8f5e9;
+
+  --text-primary: #1a2e1a;
+  --text-secondary: #3d5c3d;
+  --text-muted: #6b8c6b;
+
+  --border: #c8dcc8;
+  --border-light: #dde8dd;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.12);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --transition: all 0.3s ease;
+
+  --font-body: "Inter", sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+/* ============================================
+   MODO OSCURO
+   ============================================ */
+
+.dark {
+  --bg-primary: #0f1a0f;
+  --bg-secondary: #162016;
+  --card-bg: #1e2e1e;
+
+  --primary: #66bb6a;
+  --primary-dark: #4caf50;
+  --primary-light: #81c784;
+  --primary-subtle: #1a3320;
+
+  --text-primary: #f0f7f0;
+  --text-secondary: #b2ccb2;
+  --text-muted: #7a9e7a;
+
+  --border: #2a3f2a;
+  --border-light: #243324;
+}
+
+/* ============================================
+   RESET Y BASE
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 600;
+}
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+.section {
+  padding: 90px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}

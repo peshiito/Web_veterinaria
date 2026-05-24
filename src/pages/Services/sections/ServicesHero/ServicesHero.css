@@ -1,0 +1,40 @@
+.services-hero {
+  padding-top: 130px;
+  padding-bottom: 70px;
+  background: linear-gradient(
+    160deg,
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 100%
+  );
+  text-align: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.services-hero__content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.services-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-subtle);
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.services-hero__title {
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.services-hero__description {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
